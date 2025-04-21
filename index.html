@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday!</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to top right, #ff9a9e, #fad0c4);
+      font-family: 'Comic Sans MS', cursive;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      animation: pop 1s ease-in-out infinite alternate;
+    }
+
+    p {
+      font-size: 1.5rem;
+      max-width: 80%;
+      line-height: 1.6;
+    }
+
+    .cake {
+      font-size: 4rem;
+      margin-top: 20px;
+      animation: float 2s infinite ease-in-out;
+    }
+
+    @keyframes pop {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.05); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 12px 24px;
+      background: #fff;
+      color: #ff4e50;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #ff4e50;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 Happy Birthday, Shourya! 🎉</h1>
+  <div class="cake">🎂🎈🎁</div>
+  <p>
+    Wishing you a day full of love, laughter, cake, and surprises!<br>
+    May this year bring you endless joy and sparkle ✨<br><br>
+    You're not just a year older… you're a year more awesome 💪🌟
+  </p>
+  <button class="btn" onclick="alert('Here’s to YOU! 🥂 Happy Birthday again!')">Celebrate 🎊</button>
+
+</body>
+</html>
